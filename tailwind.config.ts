@@ -13,7 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        "purple-xl" : "#7474cd",
+        "purple-lg": "#898ece",
+        "purple-md": "#b0b5e0",
+        "purple-sm": "#daddf1"
+      },
+      screens: {
+        // ...
+        'xsm': '360px',
+      },
+      width: {
+        '100' : '520px'
+      }
     },
+
   },
   plugins: [],
 }

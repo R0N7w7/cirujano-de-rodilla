@@ -1,27 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* #3730a3 */
+
+/* indigo-800 */
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --color: #3830a3d5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    font-family: "Rubik", sans-serif
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* body{
+    overflow-x: hidden;
+} */
+
+.must-be-shadowed {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.hero {
+    grid-template-areas: "hero";
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.hero h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.54);
+}
+
+.hero picture {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: hero;
+}
+
+.hero picture img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero>div {
+    z-index: 2;
+    grid-area: hero;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-ver-mas {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.acordeon {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all ease-in-out 200ms;
+}
+
+.acordeon * {
+    transition: all ease-in-out 200ms;
+}
+
+.acordeon-container>* {
+    transition: all ease-in-out 200ms;
+}
+
+#contact-link {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+.media-icon {
+    transition: all ease-in-out 200ms;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.media-icon:hover {
+    transform: scale(1.10);
+}
+
+.must-be-floating{
+    animation: floatPNG 3s linear infinite;
+}
+.map{
+    animation: float 3s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/* Genera las olas del Hero */
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: rgba(255, 255, 255, 1);
+    animation: waves 8s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+details[open] h3 {
+    color: #3730a3;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-5px);
+    }
+
+    100% {
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatPNG {
+    0% {
+        /* filter: drop-shadow(0 2px 5px  rgba(0, 0, 0, 0.5)); */
+        transform: translatey(0px);
+    }
+
+    50% {
+        /* filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.1)); */
+        transform: translatey(-5px);
+    }
+
+    100% {
+        /* filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5)); */
+        transform: translatey(0px);
+    }
 }
