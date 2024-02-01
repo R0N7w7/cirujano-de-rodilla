@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 max-w-6xl md:grid-cols-2">
                 <div className="flex flex-col items-center justify-center w-full sm:text-center xl:text-left">
                     <div className="flex flex-col w-full pl-3 pr-3">
-                        <h1 className="text-6xl font-medium text-white text xsm:text-7xl">Cuida Tus Rodillas</h1>
+                        <h1 className="text-6xl font-medium text-white text xsm:text-7xl titulo-change">Cuida Tus Rodillas</h1>
                         <p className="text-2xl mt-8 text-indigo-800 xsm:text-3xl">Alivia el dolor, recupera tu movilidad y vive sin limitaciones con nuestro experto en rodillas.</p>
                     </div>
                     <div className="grid grid-cols-1 justify-items-center mt-16 text-center w-full">

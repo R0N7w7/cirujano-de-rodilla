@@ -55,11 +55,11 @@ const servicios: Array<servicio> = [
 
 const Services = () => {
     return (
-        <section className="w-full grid grid-cols-1 justify-items-center mt-8">
-            <h2 className="text-3xl font-medium text-indigo-800">
+        <section className="w-full grid grid-cols-1 justify-items-center mt-0 services pb-3">
+            <h2 className="text-3xl font-medium text-indigo-800 popup mt-8">
                 SERVICIOS
             </h2>
-            <p className="pl-2 pr-2 mt-5 text-lg text-center font-light max-w-xl sm:text-xl">
+            <p className="pl-2 pr-2 mt-5 text-lg text-center font-light max-w-7xl sm:text-xl popup">
                 El doctor Jardinez utiliza los últimos avances en tecnología y técnicas quirúrgicas para brindar a sus pacientes los mejores resultados posibles. También se compromete a proporcionar una atención personalizada y compasiva a cada paciente.
             </p>
             <section className="grid grid-cols-1 mt-4 gap-4 sm:grid-cols-2 sm:gap-0 lg:grid-cols-3 max-w-7xl">

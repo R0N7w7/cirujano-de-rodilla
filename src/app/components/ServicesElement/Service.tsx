@@ -10,9 +10,9 @@ type Props = {
 
 const Service = ({ title, description, icon }: Props) => {
   return (
-    <article className="flex flex-col items-center justify-center text-center border-b border-indigo-50 pb-4 mt-3">
+    <article className="flex flex-col items-center justify-center text-center border-b border-indigo-50 pb-4 mt-3 popup">
 
-      <div className="service-icon rounded-full p-4 w-20 h-20 flex items-center justify-center">
+      <div className="service-icon rounded-full p-4 w-20 h-20 flex items-center justify-center bg-white">
         {React.cloneElement(icon, { className: "w-8 h-8 fill-indigo-300" })}
       </div>
 

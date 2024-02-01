@@ -34,7 +34,7 @@ const questions: Array<Questions> = [
 
 const FrecuentlyQuestions = () => {
     return (
-        <article className="acordeon-container w-full grid justify-items-center grid-cols-1 mt-5 md:grid-cols-2">
+        <article className="acordeon-container w-full grid justify-items-center grid-cols-1 mt-5 mb-5 lg:grid-cols-2 max-w-7xl popup">
             <section className="grid grid-cols-1 justify-items-center mt-3 gap-5 w-full">
                 <h2 className="text-3xl font-medium text-indigo-800">Preguntas Frecuentes</h2>
                 {questions.map(question => (

@@ -1,61 +1,79 @@
-import React from "react"
-import { FaAngleRight } from "react-icons/fa6"
 import { GrFacebook, GrInstagram, GrMail, GrMap, GrPhone, GrYoutube } from "react-icons/gr"
 import { ImWhatsapp } from "react-icons/im"
 
-type Info = {
-    title: string,
-    content?: string,
-    link?: string,
-    icon?: React.ReactElement
-}
-
-const data: Array<Info> = [
-    {
-        title: "Número de teléfono:",
-        content: "5519837981",
-        link: 'wah',
-        icon: <GrPhone />
-    },
-    {
-        title: "WhatsApp:",
-        content: "5519837981",
-        link: 'wa.link/050iq1',
-        icon: <ImWhatsapp />
-    },
-    {
-        title: "Correo Electrónico:",
-        content: "dr.marcojardinez@gmail.com",
-        link: 'wah',
-        icon: <GrMail />
-    },
-    {
-        title: "Dirección Pachuca:",
-        content: "Hospital Español, Blvrd Luis Donaldo Colosio 4300, El Palmar, 42088 Pachuca de Soto, Hgo"
-    },
-    {
-        title: "Google Maps Pachuca",
-        icon: <GrMap />
-    },
-    {
-        title: "Dirección Tulancingo:",
-        content: "Narcizo Mendoza, 43625 Tulancingo de Bravo, Hgo."
-    },
-    {
-        title: "Google Maps Tulancingo",
-        icon: <GrMap />
-    },
-]
-
 const Contact = () => {
     return (
-        <article className='text-white w-full mt-3 grid grid-cols-1 pl-2 pr-2 justify-items-center md:grid-cols-2 '>
-            <section className="flex flex-col items-center justify-center mt-2 pl-3 pr-3 w-full lg:w-5/6">
-                <h2 className="text-4xl text-indigo-800 font-medium ">Visitános</h2>
+        <article className='text-white w-full flex flex-col pb-5 justify-items-center lg:flex-row sisisi z-20 contact'>
+
+            <section className="flex flex-col items-center justify-start w-full mt-2 pb-5 h-max lg:w-3/5 popup">
+                {/* 
+                <picture className="w-full h-32 flex items-center justify-center ">
+                    <img src="/icons/mainLogo.png" alt="" className="h-full w-auto" />
+                </picture> */}
+
+                <h2 className="text-4xl font-medium my-5 md:text-5xl ">Contáctanos</h2>
+
+                <div className="flex flex-col items-center w-full gap-5">
+
+                    <div className="w-full pr-5 pl-5 mt-3 grid gap-5 grid-cols-1 sm:grid-cols-2 sm:justify-items-center">
+
+                        <div className="flex flex-col items-start justify-start gap-5 w-max  ">
+
+                            <div className="">
+                                <h3 className="text-3xl">Número:</h3>
+                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><GrPhone /> 7712887435</a>
+                            </div>
+
+                            <div>
+                                <h3 className="flex gap-1 items-center text-3xl">WhastApp:</h3>
+                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><ImWhatsapp /> 7712887435</a>
+                            </div>
+
+                            <div>
+                                <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3>
+                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><GrMail />cr439694@gmail.com</a>
+                            </div>
+
+                        </div>
+
+                        <div className="grid grid-cols-1 gap-5">
+
+                            <div className="">
+                                <h3 className="text-3xl">Dirección Pachuca:</h3>
+                                <a href="" className="flex gap-1 items-center text-xl ">Hospital Español, Blvrd Luis Donaldo Colosio 4300, El Palmar, 42088 Pachuca de Soto, Hgo</a>
+                            </div>
+
+                            <div className="">
+                                <h3 className="text-3xl">Dirección Tulancingo:</h3>
+                                <a href="" className="flex gap-1 items-center text-xl ">Narcizo Mendoza, 43625 Tulancingo de Bravo, Hgo.</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="w-max place-self-start pl-5 grid grid-cols-1 gap-5 sm:grid-cols-2  sm:place-self-center sm:pl-0">
+
+                        <div className="w-full">
+                            <h3 className="text-2xl flex items-center gap-1 underline underline-offset-2"><GrMap />Google Maps Pachuca</h3>
+                        </div>
+
+                        <div className="w-full">
+                            <h3 className="text-2xl flex items-center gap-1 underline underline-offset-2"><GrMap />Google Maps Tulancingo</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section className="flex flex-col items-center justify-center pl-3 pr-3 w-full mt-2 lg:w-2/5 popup">
+{/*                 <h2 className="text-4xl text-white font-medium md:text-5xl pt-5">Visitános</h2> */}
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2371.5299986911323!2d-98.7722879232043!3d20.11023900999768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a12572b3e719%3A0xdda03ccfc6f56290!2sHospital%20Espa%C3%B1ol!5e0!3m2!1ses!2smx!4v1706241383422!5m2!1ses!2smx"
                     loading="lazy"
-                    className="map w-full aspect-video rounded-xl mt-5"
+                    className="map aspect-video rounded-xl mt-5 h-36 xsm:h-52 sm:h-60 md:h-72 lg:h-56 xl:h-72"
                 />
                 <div className="flex gap-5 mt-5">
                     <div className="media-icon w-12 rounded-lg aspect-square bg-indigo-700 flex items-center justify-center">
@@ -67,29 +85,6 @@ const Contact = () => {
                     <div className="media-icon w-12 rounded-lg aspect-square bg-red-600 flex items-center justify-center">
                         <GrYoutube className="h-full w-full p-2 fill-white" />
                     </div>
-                </div>
-            </section>
-            <section className="flex flex-col items-center justify-center w-full pb-8 bg-indigo-800 mt-5 rounded-xl lg:w-5/6">
-                <h2 className="text-4xl font-medium mt-3">Contáctanos</h2>
-                <div className="w-full pr-5 pl-5 mt-3 grid gap-5">
-                    {data.map((info, index) => (
-                        <div key={index} id={!info.content ? 'contact-link' : ''}>
-                            <div className="flex items-center ">
-                                {(!info.content && info.icon) ? <>{React.cloneElement(info.icon, { className: "w-5 h-5 mr-2" })}</> : <></>}
-                                <h3 className="text-2xl text-left font font-medium" >{info.title}</h3>
-                                {!info.content && <FaAngleRight className="h-6 w-6" />}
-                            </div>
-                            <div className="flex items-center">
-                                {(!!info.icon && info.content) ?
-                                    <>
-                                        {React.cloneElement(info.icon, { className: "w-5 h-5 mr-2" })}
-                                    </>
-                                    : <></>
-                                }
-                                {!!info.content && <a href={info.link ? info.link : '#'}><p className="text-lg" id={info.link ? 'contact-link' : ''}>{info.content}</p></a>}
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </section>
         </article>

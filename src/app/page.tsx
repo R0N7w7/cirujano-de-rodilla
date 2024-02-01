@@ -2,6 +2,7 @@ import Description from './components/Description'
 import FrecuentlyQuestions from './components/FrecuentlyQuestions'
 import { Hero } from './components/Hero'
 import { Navigation } from './components/Navigation'
+import { Resume } from './components/Resume'
 import { Services } from './components/ServicesElement'
 import { Videos } from './components/Videos'
 
@@ -12,15 +13,18 @@ export default function Home() {
         <Navigation />
         <Hero />
       </header>
-      <main>
+      <main className='grid grid-cols-1 w-full justify-items-center z-20'>
         <Services />
-        <Description/> 
-        <Videos />
-        <FrecuentlyQuestions />
+        <Description />
+        <div className='flex flex-col items-center justify-center w-full final-section'>  
+          <Videos />
+          <FrecuentlyQuestions />
+        </div>
       </main>
-      <footer>
-        {/*         <Resume /> */}
+      <footer className='z-0'>
+        <Resume />
       </footer>
+      <script src="/Js/index.js" async></script>
     </>
   )
 }
