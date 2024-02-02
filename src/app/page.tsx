@@ -24,7 +24,7 @@ export default function Home() {
       <footer className='z-0'>
         <Resume />
       </footer>
-      <script src="/Js/index.js" async></script>
+      <script src="/Js/index.js" defer></script>
     </>
   )
 }

@@ -47,7 +47,7 @@ function Description({ }: Props) {
                         Acerca del Dr. Marco Jardinez
                     </h2>
 
-                    <p className="mt-4 text-xl font-thin ml-3 mr-3">
+                    <p className="mt-4 text-xl ml-3 mr-3 ">
                         Estudios cursados, especialidades y cedulas profesionales
                     </p>
                 </div>

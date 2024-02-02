@@ -1,75 +1,72 @@
-import { GrFacebook, GrInstagram, GrMail, GrMap, GrPhone, GrYoutube } from "react-icons/gr"
+import { GrFacebook, GrInstagram, GrLocation, GrMail, GrMap, GrPhone, GrYoutube } from "react-icons/gr"
 import { ImWhatsapp } from "react-icons/im"
 
 const Contact = () => {
     return (
         <article className='text-white w-full flex flex-col pb-5 justify-items-center lg:flex-row sisisi z-20 contact'>
 
-            <section className="flex flex-col items-center justify-start w-full mt-2 pb-5 h-max lg:w-3/5 popup">
+            <section className="flex flex-col items-center justify-start w-full mt-2 pb-5 h-max lg:w-3/5">
                 {/* 
                 <picture className="w-full h-32 flex items-center justify-center ">
                     <img src="/icons/mainLogo.png" alt="" className="h-full w-auto" />
                 </picture> */}
 
-                <h2 className="text-4xl font-medium my-5 md:text-5xl ">Contáctanos</h2>
+                <h2 className="text-4xl font-medium my-5 md:text-5xl popup">Contáctanos</h2>
 
                 <div className="flex flex-col items-center w-full gap-5">
 
                     <div className="w-full pr-5 pl-5 mt-3 grid gap-5 grid-cols-1 sm:grid-cols-2 sm:justify-items-center">
 
-                        <div className="flex flex-col items-start justify-start gap-5 w-max  ">
+                        <div className="flex flex-col items-start justify-start gap-5 w-max">
 
-                            <div className="">
-                                <h3 className="text-3xl">Número:</h3>
-                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><GrPhone /> 7712887435</a>
+                            <div className="popup appear">
+                                {/*                                 <h3 className="text-3xl">Número:</h3> */}
+                                <a href="" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrPhone /> 7712887435</a>
                             </div>
 
-                            <div>
-                                <h3 className="flex gap-1 items-center text-3xl">WhastApp:</h3>
-                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><ImWhatsapp /> 7712887435</a>
+                            <div className="popup appear">
+                                {/*                                 <h3 className="flex gap-1 items-center text-3xl">WhastApp:</h3> */}
+                                <a href="" className="flex gap-2 items-center text-xl underline underline-offset-2"><ImWhatsapp /> 7712887435</a>
                             </div>
 
-                            <div>
-                                <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3>
-                                <a href="" className="flex gap-1 items-center text-xl underline underline-offset-2"><GrMail />cr439694@gmail.com</a>
+                            <div className="popup appear">
+                                {/*                                 <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3> */}
+                                <a href="" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrMail />cr439694@gmail.com</a>
+                            </div>
+
+                            <div className="popup appear">
+                                {/*                                 <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3> */}
+                                <a href="" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrLocation />Google Maps Pachuca</a>
+                            </div>
+
+                            <div className="popup appear">
+                                {/*                                 <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3> */}
+                                <a href="" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrLocation />Google Maps Tulancingo</a>
                             </div>
 
                         </div>
 
                         <div className="grid grid-cols-1 gap-5">
 
-                            <div className="">
-                                <h3 className="text-3xl">Dirección Pachuca:</h3>
-                                <a href="" className="flex gap-1 items-center text-xl ">Hospital Español, Blvrd Luis Donaldo Colosio 4300, El Palmar, 42088 Pachuca de Soto, Hgo</a>
+                            <div className="popup appear">
+                                <h3 className="text-2xl">Dirección Pachuca:</h3>
+                                <a href="" className="flex gap-2 items-center text-xl "><GrMap className="w-8 h-8" /><p className="w-full">Hospital Español, Blvrd Luis Donaldo Colosio 4300, El Palmar, 42088 Pachuca de Soto, Hgo</p></a>
                             </div>
 
-                            <div className="">
-                                <h3 className="text-3xl">Dirección Tulancingo:</h3>
-                                <a href="" className="flex gap-1 items-center text-xl ">Narcizo Mendoza, 43625 Tulancingo de Bravo, Hgo.</a>
+                            <div className="popup appear">
+                                <h3 className="text-2xl">Dirección Tulancingo:</h3>
+                                <a href="" className="flex gap-2 items-center text-xl "><GrMap className="w-8 h-8" /><p className="w-full">Narcizo Mendoza, 43625 Tulancingo de Bravo, Hgo.</p></a>
                             </div>
 
                         </div>
 
                     </div>
-
-                    <div className="w-max place-self-start pl-5 grid grid-cols-1 gap-5 sm:grid-cols-2  sm:place-self-center sm:pl-0">
-
-                        <div className="w-full">
-                            <h3 className="text-2xl flex items-center gap-1 underline underline-offset-2"><GrMap />Google Maps Pachuca</h3>
-                        </div>
-
-                        <div className="w-full">
-                            <h3 className="text-2xl flex items-center gap-1 underline underline-offset-2"><GrMap />Google Maps Tulancingo</h3>
-                        </div>
-
-                    </div>
-
                 </div>
             </section>
 
 
-            <section className="flex flex-col items-center justify-center pl-3 pr-3 w-full mt-2 lg:w-2/5 popup">
-{/*                 <h2 className="text-4xl text-white font-medium md:text-5xl pt-5">Visitános</h2> */}
+            <section className="flex flex-col items-center justify-center pl-3 pr-3 w-full mt-2 lg:w-2/5">
+                {/*                 <h2 className="text-4xl text-white font-medium md:text-5xl pt-5">Visitános</h2> */}
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2371.5299986911323!2d-98.7722879232043!3d20.11023900999768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a12572b3e719%3A0xdda03ccfc6f56290!2sHospital%20Espa%C3%B1ol!5e0!3m2!1ses!2smx!4v1706241383422!5m2!1ses!2smx"
                     loading="lazy"
