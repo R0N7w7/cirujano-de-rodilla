@@ -43,7 +43,7 @@ const FrecuentlyQuestions = () => {
             </section>
             <section className="w-96">
                 <picture className="w-full h-full hidden lg:flex">
-                    <img src="/images/iphone.png" alt="" className="w-full" />
+                    <img src="/images/iphone.webp" alt="" className="w-full" loading="lazy"/>
                 </picture>
             </section>
         </article>

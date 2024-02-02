@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section className="hero grid place-items-center h-screen">
             <picture className="h-screen w-full overflow-hidden">
-                <img src="/backgrounds/background.png" alt="" className=""/>
+                <img src="/backgrounds/background.webp" alt="" className=""/>
             </picture>
             <div className="grid grid-cols-1 max-w-6xl md:grid-cols-2">
                 <div className="flex flex-col items-center justify-center w-full sm:text-center xl:text-left">
@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
                 <div className="hidden max-w-2xl h-auto items-center justify-center md:flex">
                     <picture className="w-full h-auto">
-                        <img src="/images/doctorHero.png" alt="" className="must-be-floating"/>
+                        <img src="/images/doctorHero.webp" alt="" className="must-be-floating"/>
                     </picture>
                 </div>
             </div>

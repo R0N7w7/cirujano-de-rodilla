@@ -6,10 +6,6 @@ const Contact = () => {
         <article className='text-white w-full flex flex-col pb-5 justify-items-center lg:flex-row sisisi z-20 contact'>
 
             <section className="flex flex-col items-center justify-start w-full mt-2 pb-5 h-max lg:w-3/5">
-                {/* 
-                <picture className="w-full h-32 flex items-center justify-center ">
-                    <img src="/icons/mainLogo.png" alt="" className="h-full w-auto" />
-                </picture> */}
 
                 <h2 className="text-4xl font-medium my-5 md:text-5xl popup">Contáctanos</h2>
 
@@ -70,7 +66,7 @@ const Contact = () => {
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2371.5299986911323!2d-98.7722879232043!3d20.11023900999768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a12572b3e719%3A0xdda03ccfc6f56290!2sHospital%20Espa%C3%B1ol!5e0!3m2!1ses!2smx!4v1706241383422!5m2!1ses!2smx"
                     loading="lazy"
-                    className="map aspect-video rounded-xl mt-5 h-36 xsm:h-52 sm:h-60 md:h-72 lg:h-56 xl:h-72"
+                    className="map aspect-video rounded-xl mt-5 h-36 xsm:h-52 sm:h-60 md:h-72 lg:h-56 xl:h-72 popup"
                 />
                 <div className="flex gap-5 mt-5">
                     <div className="media-icon w-12 rounded-lg aspect-square bg-indigo-700 flex items-center justify-center">

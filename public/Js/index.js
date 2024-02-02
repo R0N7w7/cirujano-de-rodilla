@@ -23,43 +23,6 @@
             observer.observe(elemento);
         });
 
-
-        const textos = document.querySelectorAll('.titulo-change');
-        textos.forEach(texto => {
-            const textoContenido = texto.textContent.trim();
-            texto.textContent = '';
-
-            // Función para crear los elementos <span> y animar las letras
-            function animarLetras() {
-                for (let i = 0; i < textoContenido.length; i++) {
-                    const letra = document.createElement('span');
-                    letra.textContent = textoContenido[i];
-                    letra.style.animationDelay = `${i * 0.05}s`;
-                    texto.appendChild(letra);
-                }
-                texto.classList.add('animar-letras');
-            }
-
-            // Opciones para el Intersection Observer
-            const opciones = {
-                root: null, // El observador se fija en el viewport por defecto
-                rootMargin: '0px', // Margen en el área del viewport
-                threshold: 0.5, // Umbral de intersección (50% del elemento en pantalla)
-            };
-
-            // Crear un observador
-            const observador = new IntersectionObserver(function (entradas) {
-                if (entradas[0].isIntersecting) {
-                    // Si el elemento entra en pantalla, activar la animación
-                    animarLetras();
-                    observador.disconnect();
-                }
-            }, opciones);
-
-            // Observar el elemento <p>
-            observador.observe(texto);
-        });
-
         var observer4 = new IntersectionObserver(function (entries, observer4) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
@@ -79,7 +42,7 @@
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animated');
-                    entry.target.style.animation = 'fadeLeftSlide 1300ms forwards';
+                    entry.target.style.animation = 'fadeLeftSlide 1500ms forwards';
                     observer5.unobserve(entry.target);
                 }
             });
@@ -101,7 +64,7 @@
         }, { threshold: 0.3 }); // Cambia el valor según tus necesidades
 
         // Observar todos los elementos con la clase 'titulo'
-        document.querySelectorAll('.serviceIcon, .map').forEach(function (titulo) {
+        document.querySelectorAll('.serviceIcon, h1').forEach(function (titulo) {
             observer6.observe(titulo);
         });
     })
