@@ -8,6 +8,10 @@
 
 /* indigo-800 */
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --color: #151b46;
 }
@@ -150,7 +154,7 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #e7d2ff45;
+    background-color: #e7d2ff61;
     /* Fondo blanco semitransparente */
 }
 

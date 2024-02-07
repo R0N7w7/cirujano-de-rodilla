@@ -1,14 +1,16 @@
 import React from "react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { ViewMore } from "../ViewMore";
 
 
 type Props = {
   title: string,
   description: string,
   icon: React.ReactElement,
+  content: Array<string>
 }
 
-const Service = ({ title, description, icon }: Props) => {
+const Service = ({ title, description, icon, content }: Props) => {
   return (
     <article className="flex flex-col items-center justify-center text-center border-b border-indigo-50 pb-4 mt-3 popup">
 
@@ -22,9 +24,7 @@ const Service = ({ title, description, icon }: Props) => {
 
       <p className="font-light text-gray-700 text-xl pr-8 pl-8 h-24 flex items-center max-w-md  md:max-w-80 md:pr-2 md:pl-2 lg:pr-0 lg:pl-0">{description}</p>
 
-      <button className="btn-ver-mas mt-1 flex items-center justify-center w-40 bg-indigo-600 rounded-full pt-1 pb-1 text-lg text-white font-medium hover:bg-indigo-700 active:bg-indigo-800 !transition-all">
-        Ver más<FaArrowAltCircleRight className="ml-4" />
-      </button>
+      <ViewMore title={title} content={content} icon={ icon } />
     </article>
   )
 }

@@ -19,8 +19,8 @@ const questions: Array<Questions> = [
         answer: ["El tiempo de recuperación depende del tipo de lesión y del tratamiento que se realice.", "Algunas personas pueden recuperarse en unas pocas semanas, mientras que otras pueden necesitar varios meses.", "El doctor te dará una estimación basada en tu caso específico."]
     },
     {
-        question: "¿Qué tipos de terapias físicas ofrecen después de la cirugía?",
-        answer: ["Ofrecemos una gama completa de terapias físicas diseñadas para ayudarte a recuperar la fuerza, la movilidad y la función después de la cirugía. Estas pueden incluir ejercicios de fortalecimiento, estiramiento, equilibrio y movimiento."]
+        question: "¿Se necesita terapia física para la recuperación?",
+        answer: ["Sí, en la mayoría de los casos será necesario terapias físicas para ayudarte a recuperar la fuerza, la movilidad y la función después de la cirugía.", "Estas pueden incluir ejercicios de fortalecimiento, estiramiento, equilibrio y movimiento."]
     },
     {
         question: "¿El doctor tiene experiencia en tratar mi tipo de lesión?",
@@ -34,7 +34,7 @@ const questions: Array<Questions> = [
 
 const FrecuentlyQuestions = () => {
     return (
-        <article className="acordeon-container w-full grid justify-items-center grid-cols-1 mt-5 mb-5 lg:grid-cols-2 max-w-7xl popup">
+        <article className="acordeon-container w-full grid justify-items-center grid-cols-1 mt-5 mb-5 lg:grid-cols-2 max-w-7xl popup" id="questions">
             <section className="grid grid-cols-1 justify-items-center mt-3 gap-5 w-full">
                 <h2 className="text-3xl font-medium text-indigo-800">Preguntas Frecuentes</h2>
                 {questions.map(question => (

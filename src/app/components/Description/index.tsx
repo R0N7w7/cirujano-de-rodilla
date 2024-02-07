@@ -11,17 +11,17 @@ type Achiev = {
 const Achievs: Array<Achiev> = [
     {
         title: "Traumatólogo ortopedista",
-        description: ["Lorem ipsum dolor et all querom demosrando"],
+        description: ["Especializado en lesiones óseas y articulares"],
         icon: <GrAid />
     },
     {
         title: "Subespecialista en cirugía articular",
-        description: ["Lorem ipsum dolor et all querom demosrando"],
+        description: ["Experiencia sobresaliente en tratamientos quirúrgicos"],
         icon: <GrTree />
     },
     {
         title: "Máster en cirugía avanzada de rodilla",
-        description: ["Lorem ipsum dolor et all querom demosrando"],
+        description: ["Experto en soluciones para afecciones complejas"],
         icon: <GrWorkshop />
     },
     {
@@ -35,7 +35,7 @@ type Props = {}
 
 function Description({ }: Props) {
     return (
-        <article className="description text-center w-full flex items-center justify-center gap-3 flex-col md:flex-row md:gap-8 popup md:p-5">
+        <article className="description text-center w-full flex items-center justify-center gap-3 flex-col md:flex-row md:gap-8 popup md:p-5" id="about">
             <picture className="md:justify-self-start w-auto h-96 z-10">
                 <img src="/images/perfilMain.webp" alt="" className="w-full h-full object-cover rounded-xl" loading="lazy"/>
             </picture>
@@ -43,7 +43,7 @@ function Description({ }: Props) {
 
             <div className="grid grid-cols-1 justify-items-start my-5 gap-3 md:justify-self-start pb-4 rounded-xl z-30">
                 <div className="flex flex-col items-center justify-center">
-                    <h2 className="text-3xl font-medium text-indigo-800 mt-3">
+                    <h2 className="text-3xl font-medium text-indigo-700 mt-3">
                         Acerca del Dr. Marco Jardinez
                     </h2>
 
