@@ -28,7 +28,7 @@ const Contact = () => {
 
                             <div className="popup appear">
                                 {/*                                 <h3 className="flex gap-1 items-center text-3xl">Correo Eléctronico:</h3> */}
-                                <a href="mailto:dr.marcojardinez@gmail.com" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrMail />cr439694@gmail.com</a>
+                                <a href="mailto:dr.marcojardinez@gmail.com" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrMail />dr.marcojardinez@gmail.com</a>
                             </div>
 
                             <div className="popup appear">

@@ -18,7 +18,7 @@ class MobileMenu extends React.Component {
                     <div>
                         <a href="/">
                             <picture>
-                                <img src="/designs/logoWhite.png" alt="" />
+                                <img src="/designs/logoWhite.png" alt="Logo Doctor Marco Jardinez" />
                             </picture>
                         </a>
                     </div>

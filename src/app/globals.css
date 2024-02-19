@@ -8,9 +8,11 @@
 
 /* indigo-800 */
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
+
 
 :root {
     --color: #151b46;
@@ -349,4 +351,3 @@ details[open] h3 {
         opacity: 1;
     }
 }
-

@@ -7,9 +7,10 @@ type Props = {
     title: string,
     content: Array<string>,
     icon: React.ReactElement,
+    image: string
 }
 
-const ViewMore = ({ title, content, icon }: Props) => {
+const ViewMore = ({ title, content, icon, image }: Props) => {
     const [modalOpen, setModalOpen] = useState(false);
 
     return (
@@ -39,7 +40,7 @@ const ViewMore = ({ title, content, icon }: Props) => {
                                     })
                                 }
                                 <picture className="w-full h-full items-center justify-center flex my-3">
-                                    <img src={`/images/knee${Math.floor(Math.random() * 5 + 1)}.jpg`} alt="" className="w-3/4 h-auto rounded-xl aspect-video object-cover" loading="lazy" />
+                                    <img src={image} alt="Imagen Representativa del servicio ofrecido por el doctor Marco Jardinez" className="w-3/4 h-auto rounded-xl aspect-video object-cover" loading="lazy" />
                                 </picture>
                             </section>
                             <footer className="flex w-full justify-between">

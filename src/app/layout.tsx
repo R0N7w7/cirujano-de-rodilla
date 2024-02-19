@@ -3,9 +3,8 @@ import './globals.css'
 
 
 export const metadata: Metadata = {
-  title: 'Cirujano De Rodilla | Pachuca',
-  description: 'the madafakin website of the world!',
-  
+  title: 'Dr. Marco Jardinez | Cirujano de Rodilla Experto | Tratamiento Integral de Rodilla',
+  description: 'Especialista en salud de la rodilla. Ofrecemos soluciones personalizadas para aliviar el dolor, tratar lesiones y mejorar la movilidad.',
 }
 
 export default function RootLayout({

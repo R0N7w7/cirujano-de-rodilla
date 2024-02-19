@@ -37,7 +37,7 @@ function Description({ }: Props) {
     return (
         <article className="description text-center w-full flex items-center justify-center gap-3 flex-col md:flex-row md:gap-8 popup md:p-5" id="about">
             <picture className="md:justify-self-start w-auto h-96 z-10">
-                <img src="/images/perfilMain.webp" alt="" className="w-full h-full object-cover rounded-xl" loading="lazy"/>
+                <img src="/images/doctor.webp" alt="Fotografía Doctor Marco Jardinez" className="w-full h-full object-cover rounded-xl" loading="lazy"/>
             </picture>
 
 

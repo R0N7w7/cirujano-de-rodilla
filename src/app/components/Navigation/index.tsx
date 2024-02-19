@@ -9,7 +9,7 @@ const Navigation = () => {
             <div className="h-full ml-5 pt-2 pb-2">
                 <a href="/">
                     <picture className="h-full w-full flex items-center justify-center">
-                        <img src="/designs/mainLogo.png" alt="" className="h-20" />
+                        <img src="/designs/mainLogo.png" alt="Logo Doctor Marco Jardinez" className="h-20" />
                     </picture>
                 </a>
             </div>
