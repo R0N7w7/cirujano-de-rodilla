@@ -45,7 +45,7 @@ const ViewMore = ({ title, content, icon, image }: Props) => {
                             </section>
                             <footer className="flex w-full justify-between">
                                 <button className="px-4 py-2 border border-gray-300 text-gray-800 rounded hover:bg-gray-400" onClick={() => setModalOpen(false)}>Cerrar</button>
-                                <a href="https://wa.link/050iq1">
+                                <a href="https://api.whatsapp.com/send/?phone=5217715552268&text&type=phone_number&app_absent=0">
                                     <button className="px-4 py-2 border bg-indigo-600 text-white rounded hover:bg-indigo-700 hover:text-white active:bg-indigo-800"> Agendar Cita</button>
                                 </a>
                             </footer>

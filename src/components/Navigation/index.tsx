@@ -27,7 +27,7 @@ const Navigation = () => {
                 <li className="flex items-center justify-center gap-1 hover:text-indigo-800"><GrHelpBook /><a href="#contact" className="font-medium text-md transition-all">Contacto</a></li>
             </ul>
             <div className="max-w-lg mx-auto flex-col justify-center items-center hidden xl:flex">
-                <a href="https://wa.link/050iq1">
+                <a href="https://api.whatsapp.com/send/?phone=5217715552268&text&type=phone_number&app_absent=0">
                     <button
                         type="button"
                         className="rounded-full border-2 text-gray-700 border-indigo-700 px-5 py-2 text-lg font-medium hover:bg-indigo-700 hover:text-white transition-all active:bg-indigo-800"

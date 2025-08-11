@@ -13,7 +13,7 @@ const Hero = () => {
                         <p className="text-2xl mt-8 text-indigo-800 xsm:text-3xl subtitulo-change">Alivia el dolor, recupera tu movilidad y vive sin limitaciones con nuestro experto en rodillas.</p>
                     </div>
                     <div className="grid grid-cols-1 justify-items-center mt-16 text-center w-full">
-                        <a href="https://wa.link/050iq1">
+                        <a href="https://api.whatsapp.com/send/?phone=5217715552268&text&type=phone_number&app_absent=0">
                             <button className="must-be-shadowed w-full bg-indigo-600 text-xl p-2 rounded-full text-white font-medium  hover:bg-indigo-700 active:bg-indigo-800 xsm:text-2xl xsm:pl-4 xsm:pr-4 xsm:pt-2 xsm:pb-2" >
                                 Más información
                             </button>

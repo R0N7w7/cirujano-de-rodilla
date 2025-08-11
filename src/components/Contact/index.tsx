@@ -18,12 +18,12 @@ const Contact = () => {
 
                             <div className="popup appear">
                                 {/*                                 <h3 className="text-3xl">Número:</h3> */}
-                                <a href="tel:+525519837981" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrPhone /> 5519837981</a>
+                                <a href="tel:+527715552268" className="flex gap-2 items-center text-xl underline underline-offset-2"><GrPhone /> 7715552268</a>
                             </div>
 
                             <div className="popup appear">
                                 {/*                                 <h3 className="flex gap-1 items-center text-3xl">WhastApp:</h3> */}
-                                <a href="https://wa.link/050iq1" rel="nofollow" className="flex gap-2 items-center text-xl underline underline-offset-2"><ImWhatsapp /> 5519837981</a>
+                                <a href="https://api.whatsapp.com/send/?phone=5217715552268&text&type=phone_number&app_absent=0" rel="nofollow" className="flex gap-2 items-center text-xl underline underline-offset-2"><ImWhatsapp /> 7715552268</a>
                             </div>
 
                             <div className="popup appear">
